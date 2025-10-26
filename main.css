@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header h1, section h2, section h3, form button {
+    font-family: 'bungee', cursive;
+    font-weight: normal;/*o navegador costuma colocar o peso da fonte como bold e usamos este comando para corrrigir isso*/
+    color: #e933dd;
+}
+body, input, textarea {
+    font-family: 'roboto', sans-serif;
+}
+/*especificamos anteriormente o input e o textarea, pois quando
+aplicamos essa fonte ela não afeta eles, tendo que dar esse comando direto*/
+header{
+    padding: 16px 0;/*que o espaçamento horizontal = 16 e o lateral = 0*/
+    background-color: #e933dd;
+    color: #ecf0f1;
+}
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+header h1 {
+    color:#ecf0f1;
+}
+header nav li a{
+    display: inline;/*tudo na mesma linha*/
+    margin-left: 16px;
+    color: #ecf0f1;
+    text-decoration: none;/*remove os anderline dos links*/
+}
+.container{
+    max-width: 1280px;/*crescimento maximo na horizontal*/
+    width: 100%;/*largura maxima*/
+    margin: 0 auto;/*vertical/horizontal*/
+}
+/*por meio do proximo comando o titulo e o meno ficam lado a lado*/
+header .container {
+    display:flex;/*itens do conteiner lado a lado*/
+    align-items: center;/*alinha os itens na vertical*/
+    justify-content: space-between;/*distribui o espaço entre os itens do container fazendo
+    com que os links do cabeçalho fossem para o canto direito*/
+}
+
+.brands-list img{
+    height: 47px;
+}
+.brands-list li img{
+    display:inline;/*faz com que a parte selecionada fique alinhada*/
+    margin-right: 14px;/*distância entre as logos*/
+
+}
+section .container{
+    display: flex;
+    align-items: flex-start;/*alinha os itens de um container Flexbox*/
+    justify-content: space-between;
+}
+section{
+    padding: 24px 0;/*este comando e os dois proximos tem a intenço de corrigir o 
+    espaçemnto no paragrafo e também o espaçamento dos logos*/
+}
+section h2 {
+    margin-bottom: 16px;
+    color: #e933dd;
+}
+section p {
+    margin-bottom: 18px;
+    color:rgb(1, 0, 84)
+}
+.fachada{
+    margin-right: 32px;/*margem do lado direito da fachada*/
+    height: 320px;
+}
+.social-links img {
+    height: 24px;/*espaçamento das logos (instagram)*/
+}
+.social-links li a{
+    text-decoration: none;/*remove o anderline*/
+
+}
+#contact .container {
+    display:block;/*faz com que um elemento ocupe toda a largura disponível em uma linha, 
+    iniciando sempre em uma nova linha e forçando a quebra de linha antes e depois de si*/
+}
+.contact-methods{
+    display: flex;
+    justify-content:space-between;
+}
+form input, form textarea, form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+form textarea{
+    resize: none;/*através deste comando é possivel tirar a função de redimensonamento da caixa de texto
+    do textarea*/
+    height: 180px;
+}
+section h3{
+    margin-bottom: 16px;/*margem inferior*/
+}
+form button {
+    background-color: #e933dd;
+    color: #ecf0f1;
+    border: none;/*remove as bordas do botão*/
+    cursor: pointer;/*causa um efeito de mão apontando quando passar o mouse por cima*/
+}
+form button:hover {
+background-color: #f0b2ec;/*atraves dessa propriedade é possivel fazer com que quando o usuario passar o mouse por cima do 
+    campo selecinado ele mudará de cor e ficará na cor que definimos aqui*/
+}
+input:focus, textarea:focus{
+    outline-color: #e933dd;/*quando o campo for clicado ele ficará na cor definida*/
+}
+footer {
+    background-color: #e933dd;
+    color: #ecf0f1;
+    padding: 16px 0;/*footer(rodapé) 16px horizontal, 0px vertical*/
+}
+.social-links li a {
+    text-decoration: none;
+    list-style-type:none;
+}
+.brands-list li a {
+    text-decoration: none;
+    list-style-type:none;
+}
